@@ -145,7 +145,7 @@
 
       ;; Fallback rules
       ((or (char= next #\Space)
-           (char= next #\)))'<)
+           (char= next #\<)))
       (t (intern (format nil "<~S" (read stream)))))))
 
 (defun do-nothing (stream char)
